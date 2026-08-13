@@ -21,37 +21,38 @@
 //     }
 //     const res = sum(8,4);
 //     document.write(res);
+
+const car = () =>{
+let capacity = prompt("Enter capacity of car:");
+let cost =10*capacity;
+return cost;
+}
+const plane =() =>{
+    let capacity = prompt("Enter capacity of plane:");
+let cost =100*capacity;
+return cost;
+}
+const heli =() =>{
+   let capacity = prompt("Enter capacity of helicopter:");
+let cost =105*capacity;
+return cost;
+}
 let n =prompt("Enter vehicle no.:");
 if (n==1){
-    document.write("car");
+  const res= car();
+    document.write("capacity is ",res);
 }
 else if(n==2){
-    document.write("plane");
+   const res= plane();
+    document.write("capacity is ",res);
 }
 else if(n==3){
-    document.write("helicopter");
+    const res= heli();
+    document.write("capacity is ",res);
 }
 else{
     document.write("invalid vehicle no.");
-}
-const car = (name,cost,capacity) =>{
-let name = car1;
-let cost =10;
-let capacity = 4;
-}
-const plane = (name,cost,capacity) =>{
-    let name = plane1;
-let cost =100;
-let capacity = 20;
-
-}
-const heli =(name,cost,capacity) =>{
-    let name = copter1;
-let cost =1000;
-let capacity = 2;
-
-}
-    
+}    
     </script>
     
 </body>
