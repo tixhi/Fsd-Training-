@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condition</title>
+</head>
+<body>
+    <script>
+        let n= prompt("enter number:");
+        let t=n;
+        let s=0;
+        while(n>0)
+    {
+        let r=n%10;
+        s=s +(r*r*r);
+        n=Math.floor(n/10);
+
+    }
+    if(s==t)
+    {
+        document.write("armstrong number");
+    }
+    else
+    {
+        document.write("not armstrong number");
+    }
+    </script>
+    
+</body>
+</html>
