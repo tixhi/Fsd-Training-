@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <div style = " text-align:center; margin-top: 1px; color:blue; font-size: 30px; font-family: 'Courier New', Courier, monospace;">
+    <h1>MENU</h1>
+    <h2>1. Tea</h2>
+    <h2>2. Coffee</h2>
+    <h2>3. Sugar</h2>
+    <h2>4. Rice</h2>
+    
+    <input type="number" id="n" placeholder="Enter your choice">
+    <input type="number" id="c" placeholder="Enter quantity">
+<p id="result"></p>
+    
+    <button onclick="calculateCost()">Calculate Cost</button>
+</div>  
+
+
+
+    <script>
+        const result = document.getElementById("result");
+        function calculateCost() {
+            const productno = document.getElementById("n").value;
+            const quantity = document.getElementById("c").value;
+            result.innerHTML = productno * quantity;
+
+        }
+
+
+
+
+
+
+ 
+    </script>
+    
+</body>
+
+
+
+
+
+
+ 
+    </script>
+    
+</body>
+</html>
