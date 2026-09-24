@@ -15,15 +15,15 @@ resolve();
 },2000);
 });
 } 
-// f1().then(f2).catch((err)=>{
-//     console.log(err);
-// });  
-async function test() {
-    try {
-        await f1();
-        await f2();
-    } catch (err) {
-        console.log(err);
-    }
-}
-test();
+f1().then(f2).catch((err)=>{
+    console.log(err);
+});  
+// async function test() {
+//     try {
+//         await f1();
+//         await f2();
+//     } catch (err) {
+//         console.log(err);
+    
+// }
+// test();
